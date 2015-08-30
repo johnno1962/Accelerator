@@ -8,7 +8,7 @@ point of view breaking the program up into many small parts progressively slows
 application launch time as they need to be dynamically loaded one by one.
 
 The solution is to statically link the program as a whole but as
-CocoaPods start to be written in Swift this would normally not an option.
+CocoaPods start to be written in Swift this would normally not be an option.
 
 This pod project is a proof of concept that Swift CocoaPods can be
 statically linked if you patch a project to perform the following steps:
@@ -29,7 +29,7 @@ the DYLD_PRINT_STATISTICS and DYLD_PRINT_APIS environment variables on startup.)
 
 To use, add "pod 'Accelerator'" into your projects Podfile and type "pod update".
 Each time you do this, run Pods/Accelerator/patch.rb to patch the project to use
-static linkage. You can change the variable EXCLUDED_OBJECTS_PATTERN int the
+static linkage. You can change the variable EXCLUDED_OBJECTS_PATTERN in the
 "Check Pods Manifest.lock" build phase if you encounter any problems with duplicate
 symbols on linking. To remove the patch remove the Accelerator" pod and update.
 
