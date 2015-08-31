@@ -16,7 +16,7 @@
     static int addr;
     Dl_info info;
     dladdr( &addr, &info );
-    NSLog( @"Loaded substute %s.framework", strrchr( info.dli_fname, '/' )+1 );
+    NSLog( @"Accelerator: Loaded substitute %s.framework", strrchr( info.dli_fname, '/' )+1 );
 }
 
 @end

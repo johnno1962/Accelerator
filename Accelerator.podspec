@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name     = 'Accelerator'
-    s.version  = '100.9.9'
+    s.version  = '101.9.9'
     s.license  = { :type => 'MIT', :file => 'LICENSE' }
     s.summary  = 'Inline fameworks of CocoaPods projects for faster launch'
     s.homepage = 'https://github.com/johnno1962/Accelerator'
