@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
     s.social_media_url = "https://twitter.com/Injection4Xcode"
     s.authors  = { 'John Holdsworth' => 'suppport@injectionforxcode.com' }
     s.source   = { :git => 'https://github.com/johnno1962/Accelerator.git', :tag => s.version.to_s }
+    s.platform = :ios
 
     s.source_files    = "Accelerator.{h,m}"
     s.preserve_paths  = "patch.rb"
