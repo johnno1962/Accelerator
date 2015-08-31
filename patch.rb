@@ -83,7 +83,10 @@ install_framework()
 
 orig_install_framework()
 BASH
-        contents
+    if contents !~ /code_sign_if_enabled\(\)/
+        contents = contents.gsub( /code_sign_if_enabled/, 'code_sign' )
+    end
+    contents
 }
 
 # patch original project to place list of framework objects into a file for linking
