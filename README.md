@@ -11,6 +11,11 @@ The solution is to statically link the program as a whole but as CocoaPods start
 written in Swift this would normally not be an option. Static linking would would also
 offer the possibility of applications using Swift pods to be deployed to iOS 7.
 
+Stop Press:
+
+It seems the benefit of static linking may only be manifest in the debugger
+if you [look here](https://github.com/artsy/eidolon/issues/491). Blast.
+
 This pod project is a proof of concept that Swift CocoaPods frameworks can be
 statically linked if you patch a project to perform the following steps:
 
