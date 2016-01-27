@@ -68,7 +68,7 @@ After patching to statically link the application:
 While at first glance this should lead to fast app loading time there seem
 to be other factors involved and one wonders whether the load times for
 30-odd frameworks are going to be significant relative to the nearly
-300 Apple frameworks an application links with on startup. Perhpas
+300 Apple frameworks an application links with on startup. Perhaps
 the most concrete benefit will be to be able to deploy to iOS7.
 
 To use, add "pod 'Accelerator'" into your projects Podfile and type "pod update".
